@@ -31,23 +31,23 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", "1645561253")
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
+    API_ID = int(os.environ.get("API_ID", "17165027"))
+    API_HASH = os.environ.get("API_HASH", "51cdd8a99919c3664164bed8d4c6fbaa")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
     SESSION = os.environ.get("SESSION_STRING", "")
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "CHAT")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
    
     #Database
-    DATABASE_URI=os.environ.get("DATABASE_URI", None)
+    DATABASE_URI=os.environ.get("DATABASE_URI", "mongodb+srv://semoo:semoo@semo.acu5d.mongodb.net/semo?retryWrites=true&w=majority")
     DATABASE_NAME=os.environ.get("DATABASE_NAME", "VCPlayerBot")
 
 
@@ -59,7 +59,8 @@ class Config:
     #Optional Configuration
     SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
     ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
-    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", False)
+    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "@ahmedelnqyb هذا البوت صنع بواسط المطور احمد النقيب 
+@BARELNQYB : يمكنك التواصل معي من هنا ")
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     #others
     
