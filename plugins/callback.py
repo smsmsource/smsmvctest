@@ -105,7 +105,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return
 
 
-        elif query.data.startswith("help"):
+        elif query.data.startswith("hhhhhhelp"):
             if query.message.chat.type != "private" and query.message.reply_to_message.from_user is None:
                 return await query.answer("I cant help you here, since you are an anonymous admin, message me in private chat.", show_alert=True)
             elif query.message.chat.type != "private" and query.from_user.id != query.message.reply_to_message.from_user.id:
