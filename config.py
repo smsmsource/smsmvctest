@@ -41,7 +41,7 @@ class Config:
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "CHAT")
+    LOG_GROUP=os.environ.get("CHAT", "")
 
     #Stream 
     STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
