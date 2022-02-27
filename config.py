@@ -59,8 +59,7 @@ class Config:
     #Optional Configuration
     SHUFFLE=is_enabled(os.environ.get("SHUFFLE", 'True'))
     ADMIN_ONLY=is_enabled(os.environ.get("ADMIN_ONLY", "False"))
-    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "@ahmedelnqyb هذا البوت صنع بواسط المطور احمد النقيب 
-@BARELNQYB : يمكنك التواصل معي من هنا ")
+    REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", "@ahmedelnqyb هذا البوت صنع بواسط المطور احمد النقيب \n\n @BARELNQYB : يمكنك التواصل معي من هنا ")
     EDIT_TITLE = os.environ.get("EDIT_TITLE", True)
     #others
     
