@@ -32,8 +32,6 @@
         "value": "https://youtu.be/3OwwJLhrjuc",
         "required": false
       },
-      }
-    },
     "formation": {
       "worker": {
         "quantity": 1,
